@@ -1,15 +1,31 @@
 {
+  "lang": "en",
+  "dir": "ltr",
   "short_name": "Elec-Bill",
   "name": "Electricity Bill Calculator",
+  "description": "Calculate your electricity consumption in morrroco",
   "start_url": "/",
   "theme_color": "#46BBAF",
   "background_color": "#E5E5E5",
   "display": "standalone",
   "orientation": "portrait",
   "screenshots": [
-    "/assets/calculator-panel-mobile.png",
-    "/assets/calculator-result-mobile.png",
-    "/assets/calculator-desktop.png"
+
+    {
+      "src": "/assets/screenshots/calculator-panel-mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/assets/screenshots/calculator-result-mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/assets/screenshots/calculator-desktop.png",
+      "sizes": "1366x630",
+      "type": "image/jpeg"
+    }
   ],
   "icons": [{
       "src": "/assets/apple-touch-icon.png",
@@ -65,5 +81,10 @@
     "urls": [{
       "url": "https://fonts.googleapis.com/css?family=Montserrat:500,700"
     }]
+  },
+  "serviceworker": {
+    "src": "ngsw-worker.js",
+    "scope": "/",
+    "update_via_cache": "none"
   }
 }
