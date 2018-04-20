@@ -1,0 +1,54 @@
+<aside class="panel" [class.is-panel-hide]="isHidePanel">
+
+  <h2 class="panel_title">Settings</h2>
+
+  <!-- panel_items  -->
+  <div class="panel_items-wraper"  >
+
+    <div class="panel_item">
+      <label class="panel_label" for="panel_label">City</label>
+      <select [(ngModel)]="city" (ngModelChange)="onSelectCity($event)" id="city" class="panel_input">
+        <option *ngFor="let c of serv.citys" [ngValue]="c">{{c.name}}</option>
+      </select>
+    </div>
+    <div class="panel_item">
+      <label class="panel_label" for="panel_label">COST</label>
+      <input [(ngModel)]="amount" (ngModelChange)="onAmountChange($event)" type="number" class="panel_input input-unit" value="10"
+        placeholder="Amount" />
+      <span class="panel_unit">Kwh</span>
+    </div>
+    <div class="panel_item disabled">
+      <label class="panel_label" for="panel_label">Red Fixes</label>
+      <input type="text" class="panel_input input-unit" value="17,42" disabled />
+      <span class="panel_unit">DH</span>
+    </div>
+
+  </div>
+
+</aside>
+<main class="body" [class.is-body-show]="isHidePanel">
+  <div class="result">
+    <header class="result_header">
+      <div>
+        <span class="result_label">Cost HT</span>
+        <h3>{{costHt}}</h3>
+      </div>
+      <div>
+        <span class="result_label">Cost HT</span>
+        <h3>{{tva}}</h3>
+      </div>
+    </header>
+    <div>
+      <h2>{{cost}}
+        <span class="result_unit">DH</span>
+      </h2>
+      <p class="result_highlight">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="result_highlight">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+  </div>
+</main>
+  <span class="btn-switch" (click)="onNextClick($event)">{{btn}} 
+    <svg class="btn-switch_arrow" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24.3536 4.353553c.1952-.195262.1952-.511844 0-.707106L21.1716.46447c-.1953-.19527-.5119-.19527-.7071 0-.1953.19526-.1953.51184 0 .7071L23.2929 4l-2.8284 2.82843c-.1953.19526-.1953.51184 0 .7071.1952.19527.5118.19527.7071 0l3.182-3.181977zM0 4.5h24v-1H0v1z" fill="#000"/>
+  </svg> 
+</span>

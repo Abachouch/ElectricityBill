@@ -1,0 +1,45 @@
+{
+  "short_name":"Elec-Bill",
+  "name":"Electricity Bill Calculator",
+  "start_url":"/",
+  "theme_color":"#46BBAF",
+  "background_color":"#E5E5E5",
+  "display":"standalone",
+  "orientation":"portrait",
+  "icons":[
+    {
+      "src":"/assets/apple-touch-icon.png",
+      "type":"image/png"
+    },
+    {
+      "src":"/assets/images/icons/favicon-16x16.png",
+      "sizes":"16x16",
+      "type":"image/png"
+    },
+    {
+      "src":"/assets/images/icons/favicon-32x32.png",
+      "sizes":"32x32",
+      "type":"image/png"
+    },
+    {
+      "src":"/assets/images/icons/mstile-150x150.png",
+      "sizes":"150x150",
+      "type":"image/png"
+    },
+    {
+      "src":"/assets/images/icons/android-chrome-384x384.png",
+      "sizes":"384x384",
+      "type":"image/png"
+    },
+    {
+      "src": "/assets/images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src":"/assets/images/icons/android-chrome-192x192.png",
+      "sizes":"192x912",
+      "type":"image/png"
+    }
+  ]
+}
