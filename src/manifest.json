@@ -1,45 +1,69 @@
 {
-  "short_name":"Elec-Bill",
-  "name":"Electricity Bill Calculator",
-  "start_url":"/",
-  "theme_color":"#46BBAF",
-  "background_color":"#E5E5E5",
-  "display":"standalone",
-  "orientation":"portrait",
-  "icons":[
-    {
-      "src":"/assets/apple-touch-icon.png",
-      "type":"image/png"
+  "short_name": "Elec-Bill",
+  "name": "Electricity Bill Calculator",
+  "start_url": "/",
+  "theme_color": "#46BBAF",
+  "background_color": "#E5E5E5",
+  "display": "standalone",
+  "orientation": "portrait",
+  "screenshots": [
+    "/assets/calculator-panel-mobile.png",
+    "/assets/calculator-result-mobile.png",
+    "/assets/calculator-desktop.png"
+  ],
+  "icons": [{
+      "src": "/assets/apple-touch-icon.png",
+      "type": "image/png"
     },
     {
-      "src":"/assets/images/icons/favicon-16x16.png",
-      "sizes":"16x16",
-      "type":"image/png"
+      "src": "/assets/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src":"/assets/images/icons/favicon-32x32.png",
-      "sizes":"32x32",
-      "type":"image/png"
+      "src": "/assets/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src":"/assets/images/icons/mstile-150x150.png",
-      "sizes":"150x150",
-      "type":"image/png"
+      "src": "/assets/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
     },
     {
-      "src":"/assets/images/icons/android-chrome-384x384.png",
-      "sizes":"384x384",
-      "type":"image/png"
+      "src": "/assets/android-chrome-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
     },
     {
-      "src": "/assets/images/icons/android-chrome-512x512.png",
+      "src": "/assets/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src":"/assets/images/icons/android-chrome-192x192.png",
-      "sizes":"192x912",
-      "type":"image/png"
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x912",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/assets/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
-  ]
+  ],
+  "external": {
+    "urls": [{
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:500,700"
+    }]
+  }
 }
